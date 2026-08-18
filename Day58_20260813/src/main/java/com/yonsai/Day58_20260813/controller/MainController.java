@@ -3,7 +3,6 @@ package com.yonsai.Day58_20260813.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import com.yonsai.Day58_20260813.dto.Register;
 

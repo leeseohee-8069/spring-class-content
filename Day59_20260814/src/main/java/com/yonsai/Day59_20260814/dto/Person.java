@@ -1,9 +1,9 @@
 package com.yonsai.Day59_20260814.dto;
 
 public class Person {
-  private String name;
-  private int age;
-  private String mbti;
+  public String name;
+  public int age;
+  public String mbti;
 
   public Person() {
   }
