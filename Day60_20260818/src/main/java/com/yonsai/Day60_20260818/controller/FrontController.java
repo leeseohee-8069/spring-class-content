@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 // 웹 요청을 처리하는 클래스!
 @Controller
@@ -33,6 +34,19 @@ public class FrontController {
 
     // 메인 페이지 보여줄때 login결과값을 보내줘야된다.
     상자.addAttribute("login", false);
+    return "main";
+  }
+
+  // 작성자에 이름을 입력하고 검색을 누르면 처리하는 함수!
+  @GetMapping("/post/search")
+  public String search(String type, String keyword, Model 상자) {
+    // 1. 검색어랑 작성자가 잘 들어왔는지 로그 찍기!
+    System.out.println("타입:" + type);
+    System.out.println("검색어:" + keyword);
+
+    // 2. service 타입과 검색어를 이용해서 데이터 찾아줘!
+    ArrayList<Board> list = service.findAll(type, keyword);
+    상자.addAttribute("list", list);
     return "main";
   }
 

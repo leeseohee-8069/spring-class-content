@@ -19,4 +19,26 @@ public class Board {
     this.readCount = readCount;
   }
 
+  public int getNo() {
+    return no;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public String getWriter() {
+    return writer;
+  }
+
+  public String getDate() {
+    return date;
+  }
+
+  public int getReadCount() {
+    return readCount;
+  }
+
+  // getter 생성하기
+
 }
