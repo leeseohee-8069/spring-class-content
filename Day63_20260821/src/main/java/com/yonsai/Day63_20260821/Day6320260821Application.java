@@ -55,17 +55,18 @@ public class Day6320260821Application {
  * DB설계 (Entity) -> 자동으로 번역해서 실행(JPA)
  * ↓
  * Bankend 개발
- * Springboot로 역할을 나눈다.
+ * Springboot로 역할을 나눈다.(항상 스프링한테 클래스들을 알려준다.(@))
  * controller , service, repository , mysql
  * 
- * API개발
+ * URL 주소 정하기
+ * 프론트 -> 서버로 요청해야되는 주소 정하기!
  * 출석등록 POST /Attendanc
  * 출결조회 GET /AttendancAll
  * 학생조회 GET /students
  * 
  * ↓
  * Frontend 개발
- * fetch (/Attendanc , post , data) 보낼께!
+ * From 태그로 name으로 데이터보내기!
  * ↓
  * 연결 및 테스트
  * ↓
