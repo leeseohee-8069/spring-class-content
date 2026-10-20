@@ -1,0 +1,34 @@
+<!-- login.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 페이지</title>
+  </head>
+  <body>
+    <h2>로그인 페이지</h2>
+    <form action="/login-pro" method="post">
+      <input type="text" placeholder="아이디" name="id" /><br />
+      <input type="text" placeholder="비밀번호" name="pw" />
+      <button type="submit">로그인</button>
+    </form>
+  </body>
+</html>
+<!-- 
+  1. 고객이 url을 작성해서 엔터친다(브라우저)
+  2. 내가 만든 서비스 (24시간 실시간 정보를 처리하는 서버!)
+     HTTP 요청 받는다. (톰캣서버)
+     key:value 이거를 분석 
+  3. 분석한 내용을 파악(톰캣) - 어떻게 로그인 처리하는지 몰라요!
+  4. 스프링한테 넘긴다 
+  5. URL 매칭표를 보고 어떤 컨트롤러가 웹 요청을 처리하지?
+  6. 그 컨트롤러안에서 실제 처리를 하는 함수!
+  7. 서비스까지 호출!
+  8. 디비,AI,카카오서버,네이버서버..처리함
+  9. 처리가 되면 컨트롤러가 다시 확인해서 
+  10. HTML 페이지로 이동! 결과를 알려준다.
+
+
+
+ -->

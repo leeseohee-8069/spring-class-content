@@ -1,0 +1,36 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>이미지 업로드</h2>
+    <form action="/vision" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/**" />
+      <button type="submit">업로드</button>
+    </form>
+
+    <br />
+    <h2>결과</h2>
+    <p th:text="${result}"></p>
+
+    <hr />
+    <br /><br /><br />
+
+    <h2>웹 크롤링 하기</h2>
+    <a href="/craw">크롤링 시작</a><br />
+
+    <hr />
+    <br /><br /><br />
+    <h2>AI한테 질문하기</h2>
+
+    <hr />
+    <br /><br /><br />
+    <h2>PDF 문서 자르기</h2>
+    <form action="/pdf" method="get">
+      <button type="submit">pdf</button>
+    </form>
+  </body>
+</html>

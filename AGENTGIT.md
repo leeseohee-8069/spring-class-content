@@ -11,7 +11,7 @@ git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-gh repo create spring-class-content --public --source=. --remote=origin --push
+gh repo create aws_deploy --public --source=. --remote=origin --push
 
 ```
 
